@@ -2,7 +2,7 @@
 
 Subscription to the ElevenLabs Voice Cloning application allows you to use the API to create Audio speech from any given text.
 
-I have built this application in Golang as you will find examples in Python within the Elevenlabs.io site.
+I have built this application to make the API calls in Golang. You will find similiar examples in Python within the Elevenlabs.io site.
 
 Steps needed
 
