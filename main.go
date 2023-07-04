@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"log"
+	"os"
 	"net/http"
 	"fmt"
 	"github.com/gwoodwa1/voiceclone-api/utils"
@@ -16,12 +17,18 @@ func main() {
     
 	config := utils.LoadConfig("./config.yaml")
 
+	apiKey := os.Getenv("ELEVENLABS_API_KEY")
+	
+	if apiKey == "" {
+		log.Fatal("Missing required environment variable ELEVENLABS_API_KEY")
+	}
+
 	url := fmt.Sprintf("https://api.elevenlabs.io/v1/text-to-speech/%s", config.Settings.VoiceID)
 	
 	headers := map[string]string{
 		"Accept":       "audio/mpeg",
 		"Content-Type": "application/json",
-		"xi-api-key":   config.ApiKey,
+		"xi-api-key":   apiKey,
 	}
 
 	data := map[string]interface{}{
