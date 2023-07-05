@@ -11,7 +11,7 @@ Steps needed
 2) Export the API Key as an environment variable:
    `export ELEVENLABS_API_KEY=<your API key>`
    
-3) Check the config.yaml file and change any settings in there. You will need a Voice ID to change which voice you want to use. The text that you wanted converted to audio is also there within the config.yaml file
+3) Check the `config.yaml` file and change any settings in there. You will need a Voice ID to change which voice you want to use. The text that you wanted converted to audio is also there within the yaml file
 
 To run the application and convert the text to an audio speech MP3 file:
 
