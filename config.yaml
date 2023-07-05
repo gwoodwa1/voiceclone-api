@@ -1,0 +1,9 @@
+---
+textToAudio : Hello, I'm going to cover the reason why I love being on social media, it's never a dull moment :)
+
+outputFilePath : ./output.mp3
+
+settings:
+  stability:       0.5
+  similarityBoost: 0.5
+  voiceID: 7CvL5mFFcAC7R9Cc17SB # Get from https://api.elevenlabs.io/v1/voices or via API call
